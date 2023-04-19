@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
 import * as Component from '../public/components';
 
-const Queue = require('../public/queue');
+const Queue = require('../public/Queue');
 
 function CapitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
