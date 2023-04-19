@@ -9,9 +9,93 @@ body {
 /* Eu vou querer um grid */
 
 .container {
-    @apply px-4 sm:px-16 md:px-32 lg:px-64 py-8 flex flex-col gap-1;
+    @apply px-4 sm:px-16 md:px-32 lg:px-64 py-8 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5;
 }
 
 .card {
-    @apply bg-white shadow rounded overflow-hidden w-fit py-1 px-2;
+    @apply bg-white shadow rounded overflow-hidden w-fit p-2 flex flex-col gap-1 items-center transition duration-300 hover:scale-110 hover:cursor-pointer;
+}
+
+.card-title {
+    @apply text-gray-950 font-semibold text-lg;
+}
+
+.card-types {
+    @apply flex gap-1;
+}
+
+.card-type {
+    @apply text-gray-700 text-sm px-2 py-1 rounded uppercase font-bold ;
+}
+
+.grass {
+    @apply bg-green-300;
+}
+
+.poison {
+    @apply bg-purple-300;
+}
+
+.fire {
+    @apply bg-red-300;
+}
+
+.flying {
+    @apply bg-blue-300;
+}
+
+.water {
+    @apply bg-blue-500 text-gray-100;
+}
+
+.bug {
+    @apply bg-green-500 text-gray-100;
+}
+
+.normal {
+    @apply bg-gray-300;
+}
+
+.electric {
+    @apply bg-yellow-300;
+}
+
+.ground {
+    @apply bg-yellow-500 text-gray-100;
+}
+
+.fairy {
+    @apply bg-pink-300;
+}
+
+.fighting {
+    @apply bg-red-500 text-gray-100;
+}
+
+.psychic {
+    @apply bg-pink-500 text-gray-100;
+}
+
+.rock {
+    @apply bg-yellow-800 text-gray-100;
+}
+
+.ice {
+    @apply bg-blue-200;
+}
+
+.ghost {
+    @apply bg-purple-500 text-gray-100;
+}
+
+.dragon {
+    @apply bg-purple-700 text-gray-100;
+}
+
+.steel {
+    @apply bg-gray-500 text-gray-100;
+}
+
+.dark {
+    @apply bg-gray-700 text-gray-100;
 }

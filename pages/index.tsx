@@ -14,17 +14,16 @@ async function fetchData(urlPool: any[] | Queue<string>, stateFunction: { (value
     let queue = new Queue(urlPool);
 
     while (queue.running) {
-        await fetch(`/api?data=${queue.current}`).then(data => data.json()).then(pokemonData => {
-            let newData = (
-            <Component.Card>
-                { pokemonData.sprites.other['official-artwork'].front_default == null ? null : <Image src={pokemonData.sprites.other['official-artwork'].front_default} alt="Image" width="150" height="150" /> }
-                {pokemonData.id} - { CapitalizeFirstLetter(pokemonData.name) }
-            </Component.Card> );
-
-            stateVariable.push(newData);
-            stateFunction([...stateVariable, newData]);
+        await fetch(`/api?data=${queue.next()}`).then(data => data.json()).then(pokemonData => {
+            if (pokemonData.is_default) { // Eu to criando um barramento por id para facilitar o processo
+                let newData = (
+                    <Component.Card pokemonId={[pokemonData.id]} pokemonName={CapitalizeFirstLetter(pokemonData.name)} pokemonSprite={pokemonData.sprites.other['official-artwork'].front_default} pokemonTypes={pokemonData.types} />
+                );
+    
+                stateVariable.push(newData);
+                stateFunction([...stateVariable, newData]);
+            }
         })
-        queue.next();
     }
 
 }
