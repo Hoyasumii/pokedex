@@ -9,7 +9,7 @@ body {
 /* Eu vou querer um grid */
 
 .container {
-    @apply px-4 sm:px-16 md:px-32 lg:px-64 py-8 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5;
+    @apply px-4 sm:px-16 md:px-32 lg:px-64 py-8 grid gap-3 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 justify-items-center;
 }
 
 .card {
@@ -20,40 +20,44 @@ body {
     @apply text-gray-950 font-semibold text-lg;
 }
 
+.card-id {
+    @apply font-normal text-gray-500 text-sm;
+}
+
 .card-types {
     @apply flex gap-1;
 }
 
 .card-type {
-    @apply text-gray-700 text-sm px-2 py-1 rounded uppercase font-bold ;
+    @apply text-gray-100 text-sm px-2 py-1 rounded uppercase font-bold ;
 }
 
 .grass {
-    @apply bg-green-300;
+    @apply bg-green-400;
 }
 
 .poison {
-    @apply bg-purple-300;
+    @apply bg-fuchsia-700;
 }
 
 .fire {
-    @apply bg-red-300;
+    @apply bg-red-500;
 }
 
 .flying {
-    @apply bg-blue-300;
+    @apply bg-sky-400;
 }
 
 .water {
-    @apply bg-blue-500 text-gray-100;
+    @apply bg-blue-500;
 }
 
 .bug {
-    @apply bg-green-500 text-gray-100;
+    @apply bg-lime-600;
 }
 
 .normal {
-    @apply bg-gray-300;
+    @apply bg-neutral-400;
 }
 
 .electric {
@@ -61,41 +65,41 @@ body {
 }
 
 .ground {
-    @apply bg-yellow-500 text-gray-100;
+    @apply bg-amber-500;
 }
 
 .fairy {
-    @apply bg-pink-300;
+    @apply bg-pink-400;
 }
 
 .fighting {
-    @apply bg-red-500 text-gray-100;
+    @apply bg-red-800;
 }
 
 .psychic {
-    @apply bg-pink-500 text-gray-100;
+    @apply bg-pink-500;
 }
 
 .rock {
-    @apply bg-yellow-800 text-gray-100;
+    @apply bg-yellow-800;
 }
 
 .ice {
-    @apply bg-blue-200;
+    @apply bg-cyan-400;
 }
 
 .ghost {
-    @apply bg-purple-500 text-gray-100;
+    @apply bg-purple-900;
 }
 
 .dragon {
-    @apply bg-purple-700 text-gray-100;
+    @apply bg-purple-700;
 }
 
 .steel {
-    @apply bg-gray-500 text-gray-100;
+    @apply bg-zinc-500;
 }
 
 .dark {
-    @apply bg-gray-700 text-gray-100;
+    @apply bg-gray-700;
 }
