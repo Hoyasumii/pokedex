@@ -4,9 +4,16 @@ import Link from "next/link";
 
 export function Navbar() {
     return (
-        <div className="pokedex-navbar">
-            
-        </div>
+        <nav className="navbar">
+            <ul className='navbar-list'>
+                <li className='navbar-item' >
+                    <a className='logo' href="#"><strong>PokéDex</strong></a>
+                </li>
+                <li className='navbar-item'>
+                    <a className='navbar-link'  href="#">Sobre o projeto</a>
+                </li>
+            </ul>
+        </nav>
     )
 }
 

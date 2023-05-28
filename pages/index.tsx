@@ -52,16 +52,7 @@ export default function Index() {
         
     return (
         <>
-          <nav className="navbar">
-            <ul className='navbar-list'>
-              <li className='navbar-item' >
-                <a className='logo' href="#"><strong>PokéDex</strong></a>
-              </li>
-              <li className='navbar-item'>
-                <a className='navbar-link'  href="#">Sobre o projeto</a>
-              </li>
-            </ul>
-            </nav>
+			<Component.Navbar />
             <div className="pokedex-container">
                 {pokedex}
             </div>
