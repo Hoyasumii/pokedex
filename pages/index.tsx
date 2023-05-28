@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import * as Component from '../public/components';
 
+
+
 function CapitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -48,8 +50,19 @@ export default function Index() {
         });
     }, []);
 
+        
     return (
         <>
+          <nav className="navbar">
+            <ul className='navbar-list'>
+              <li className='navbar-item' >
+                <a className='logo' href="#"><strong>PokéDex</strong></a>
+              </li>
+              <li className='navbar-item'>
+                <a className='navbar-link'  href="#">Sobre o projeto</a>
+              </li>
+            </ul>
+            </nav>
             <div className="pokedex-container">
                 {pokedex}
             </div>
