@@ -6,6 +6,6 @@
 ## Integrantes:
 1. [Alan Reis Anjos](https://github.com/Hoyasumii)
 2. [José Henrique de Oliveira de Carvalho](https://github.com/jose15000)
-3. José Flávio Cerqueira Marques
+3. [José Flávio Cerqueira Marques](https://github.com/Deepzera)
 4. [Luca Capelocci Guerreiro](https://github.com/LucaCguerreiro)
-5. Luciano Magno
+5. [Luciano Magno de Souza Prata Júnior](https://github.com/Anloucy)
