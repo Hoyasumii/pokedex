@@ -26,10 +26,9 @@ async function setData(urlPool, stateFunction) {
         );
   
         newDataArray.push(newData);
+        stateFunction(state => [...newDataArray]);
       }
     }
-  
-    stateFunction(state => [...state, ...newDataArray]);
   }
   
 
