@@ -58,7 +58,7 @@ export default function Index() {
                 <a className='logo' href="#"><strong>PokéDex</strong></a>
               </li>
               <li className='navbar-item'>
-                <a className='navbar-link'  href="#">Sobre o projeto</a>
+                <a className='navbar-link'  href="pokedex\pages\index.tsx">Sobre o projeto</a>
               </li>
             </ul>
             </nav>
