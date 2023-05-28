@@ -104,8 +104,9 @@ body {
 
 
 .navbar {
-    padding: 20px;
-    display: fixed;
+    padding: 0.8rem 1.4rem; 
+    background-color: #fff;
+    @apply shadow;
   }
   
   .navbar-list {
