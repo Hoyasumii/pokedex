@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Component from '../public/components';
 
-
-
 function CapitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -30,7 +28,7 @@ async function setData(urlPool, stateFunction) {
       }
     }
   }
-  
+
 
 export default function Index() {
     let toFetchPool = []; 
@@ -44,7 +42,6 @@ export default function Index() {
             });
             
             setData(toFetchPool, setPokedex);
-            console.log(pokedex)
 
         });
     }, []);
