@@ -52,6 +52,7 @@ export default function Index() {
         
     return (
         <>
+<<<<<<< HEAD
           <nav className="navbar">
             <ul className='navbar-list'>
               <li className='navbar-item' >
@@ -62,6 +63,9 @@ export default function Index() {
               </li>
             </ul>
             </nav>
+=======
+			<Component.Navbar />
+>>>>>>> 632bb443dca5512da6154935de20c5bae0325e71
             <div className="pokedex-container">
                 {pokedex}
             </div>

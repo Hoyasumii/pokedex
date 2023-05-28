@@ -102,35 +102,33 @@ body {
     @apply bg-gray-700;
 }
 
-
 .navbar {
-    padding: 0.8rem 1.4rem; 
-    background-color: #fff;
-    @apply shadow;
-  }
+    padding: 0.8rem 1.4rem;
+    @apply shadow bg-white;
+}
   
-  .navbar-list {
+.navbar-list {
     list-style-type: none;
     margin: 0;
     padding: 0;
     display: flex;
-  }
+}
 
  
-  .navbar-item {
+.navbar-item {
     margin-right: 20px;
-  }
+}
   
-  .navbar-link {
+.navbar-link {
     text-decoration: none;
     color: #333;
     padding: 4px;
     display: grid;
     border-radius: 3px;
-  }
+}
 
-  .logo{
+.logo{
     font-size: 20px;
-  }
+}
 
   
