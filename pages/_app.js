@@ -1,6 +1,8 @@
 import React from "react";
 import Head from "next/head";
-import "../public/globals.css";
+
+import "../public/styles/globals.css";
+import "../public/styles/pokedex-styles.css";
 
 export default function MyApp({ Component, pageProps }) {
 	return (

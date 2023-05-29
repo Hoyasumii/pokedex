@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    @apply text-stone-200;
+}
+
+body {
+    @apply bg-stone-900 relative;
+}
+
+.navbar {
+    @apply shadow-sm shadow-stone-950 bg-stone-800 px-7 py-4;
+}
+  
+.navbar-list {
+    @apply list-none m-0 p-0 flex items-center gap-4;
+}
+  
+.navbar-link {
+    @apply decoration-0 text-base;
+}
+
+.logo{
+    @apply text-2xl font-bold;
+}
+
+.container {
+    @apply px-4 sm:px-16 md:px-32 lg:px-64 py-8;
+}
+
+.container.text {
+    @apply prose-base prose-h1:font-bold prose-h2:font-bold prose-ol:list-decimal prose-li:font-bold;
+}
+
+.container.text .link {
+    @apply font-bold hover:underline;
+}

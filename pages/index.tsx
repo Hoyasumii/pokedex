@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react';
 import * as Component from '../public/components';
 import Link from 'next/link';
 
-
-
 function CapitalizeFirstLetter(string) {
 	return string.charAt(0).toUpperCase() + string.slice(1);
 }
@@ -50,7 +48,7 @@ export default function Index() {
 		
 	return (
 		<>
-			<div className="pokedex-container">
+			<div className="container pokedex">
 				{pokedex}
 			</div>
 		</>

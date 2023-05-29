@@ -10,10 +10,7 @@ export function Navbar() {
                     <a className='logo' href="/"><strong>PokéDex</strong></a>
                 </li>
                 <li className='navbar-item'>
-                    <Link href="/about" legacyBehavior>
-                        <a className='navbar-link'>Sobre o projeto</a>
-                    </Link>
-                    
+                    <a href="/about" className="navbar-link">Sobre o projeto</a>
                 </li>
             </ul>
         </nav>
