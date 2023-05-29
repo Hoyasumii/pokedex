@@ -6,11 +6,14 @@ export function Navbar() {
     return (
         <nav className="navbar">
             <ul className='navbar-list'>
-                <li className='navbar-item' >
-                    <a className='logo' href="#"><strong>PokéDex</strong></a>
+                <li className='navbar-item'  >
+                    <a className='logo' href="/"><strong>PokéDex</strong></a>
                 </li>
                 <li className='navbar-item'>
-                    <a className='navbar-link'  href="#">Sobre o projeto</a>
+                    <Link href="/about" legacyBehavior>
+                        <a className='navbar-link'>Sobre o projeto</a>
+                    </Link>
+                    
                 </li>
             </ul>
         </nav>
