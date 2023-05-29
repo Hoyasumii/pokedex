@@ -50,7 +50,6 @@ export default function Index() {
 		
 	return (
 		<>
-			<Component.Navbar />
 			<div className="pokedex-container">
 				{pokedex}
 			</div>
