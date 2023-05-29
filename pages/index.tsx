@@ -27,8 +27,7 @@ async function setData(urlPool, stateFunction) {
         stateFunction(state => [...newDataArray]);
       }
     }
-  }
-
+}
 
 export default function Index() {
     let toFetchPool = []; 
@@ -45,7 +44,6 @@ export default function Index() {
 
         });
     }, []);
-
         
     return (
         <>
