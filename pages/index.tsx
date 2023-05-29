@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import * as Component from '../public/components';
+import Link from 'next/link';
 
 
 
@@ -58,7 +59,9 @@ export default function Index() {
                 <a className='logo' href="#"><strong>PokéDex</strong></a>
               </li>
               <li className='navbar-item'>
-               
+                <Link href="about" legacyBehavior>
+                  <a>Sobre o projeto</a>
+                </Link>
               </li>
             </ul>
             </nav>
